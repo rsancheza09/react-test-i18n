@@ -21,15 +21,16 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
+    "prestart": "yarn lint",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
+    "prebuild": "yarn lint",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "lint": "./node_modules/.bin/eslint src",
     "lint-fixup": "./node_modules/.bin/eslint src --ext .js,.jsx --fix"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.17.0",
     "eslint-config-standard": "^11.0.0-beta.0",

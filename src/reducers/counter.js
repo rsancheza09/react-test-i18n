@@ -3,7 +3,7 @@ import * as ACTIONS from '../constants/counter';
 const initialState = {
   count: 0,
   isIncrementing: false,
-  isDecrementing: false
+  isDecrementing: false,
 };
 
 function counter (state = initialState, action) {
@@ -11,27 +11,27 @@ function counter (state = initialState, action) {
   case ACTIONS.COUNTER.INCREMENT_REQUESTED:
     return {
       ...state,
-      isIncrementing: true
+      isIncrementing: true,
     };
 
   case ACTIONS.COUNTER.INCREMENT:
     return {
       ...state,
       count: state.count + 1,
-      isIncrementing: !state.isIncrementing
+      isIncrementing: !state.isIncrementing,
     };
 
   case ACTIONS.COUNTER.DECREMENT_REQUESTED:
     return {
       ...state,
-      isDecrementing: true
+      isDecrementing: true,
     };
 
   case ACTIONS.COUNTER.DECREMENT:
     return {
       ...state,
       count: state.count - 1,
-      isDecrementing: !state.isDecrementing
+      isDecrementing: !state.isDecrementing,
     };
 
   default:
