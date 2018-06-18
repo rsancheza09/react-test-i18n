@@ -3,8 +3,6 @@ import { Route, Link } from 'react-router-dom';
 import Home from './containers/home';
 import About from './containers/about';
 
-import 'bootstrap/dist/css/bootstrap.css';
-
 const App = () => (
   <div>
     <header>

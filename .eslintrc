@@ -24,11 +24,12 @@
     "react"
   ],
   "rules": {
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "linebreak-style": [ "error", "unix" ],
     "quotes": [ "error", "single" ],
     "semi": [ "error", "always" ],
     "comma-dangle": ["error", "always-multiline"],
+    "max-len": [ "error", 150 ],
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": [2, "always"],
