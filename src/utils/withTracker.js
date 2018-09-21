@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import GoogleAnalytics from 'react-ga';
 
-const { REACT_APP_GOOGLE_ANALYTICS_ID } = process.env;
+const {REACT_APP_GOOGLE_ANALYTICS_ID} = process.env;
 
 GoogleAnalytics.initialize(REACT_APP_GOOGLE_ANALYTICS_ID);
 
 const withTracker = (WrappedComponent, options = {}) => {
-  const trackPage = page => {
+  const trackPage = (page) => {
     GoogleAnalytics.set({
       page,
       ...options,
@@ -15,12 +15,12 @@ const withTracker = (WrappedComponent, options = {}) => {
   };
 
   const HOC = class extends Component {
-    componentDidMount () {
+    componentDidMount() {
       const page = this.props.location.pathname;
       trackPage(page);
     }
 
-    componentWillReceiveProps (nextProps) {
+    componentWillReceiveProps(nextProps) {
       const currentPage = this.props.location.pathname;
       const nextPage = nextProps.location.pathname;
 
@@ -29,7 +29,7 @@ const withTracker = (WrappedComponent, options = {}) => {
       }
     }
 
-    render () {
+    render() {
       return <WrappedComponent { ...this.props } />;
     }
   };

@@ -6,7 +6,7 @@ const initialState = {
   isDecrementing: false,
 };
 
-function counter (state = initialState, action) {
+function counter(state = initialState, action) {
   switch (action.type) {
     case ACTIONS.COUNTER.INCREMENT_REQUESTED:
       return {

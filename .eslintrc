@@ -7,9 +7,10 @@
     "window": true,
     "define": true,
     "require": true,
-    "module": true
+    "module": true,
+    "goog": true
   },
-  "extends": "standard",
+  "extends": "google",
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": {
@@ -41,5 +42,6 @@
     "react/react-in-jsx-scope": 1,
     "react/prefer-es6-class": 1,
     "react/jsx-no-bind": 0,
+    "require-jsdoc": 0
   }
 }

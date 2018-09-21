@@ -1,4 +1,4 @@
-import { defineAction } from '../utils/defineAction';
+import {defineAction} from '../utils/defineAction';
 
 export const COUNTER = defineAction(
   'COUNTER',

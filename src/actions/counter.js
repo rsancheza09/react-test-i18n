@@ -1,7 +1,7 @@
 import * as ACTIONS from '../constants/counter';
 
 export const increment = () => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: ACTIONS.COUNTER.INCREMENT_REQUESTED,
     });
@@ -13,7 +13,7 @@ export const increment = () => {
 };
 
 export const incrementAsync = () => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: ACTIONS.COUNTER.INCREMENT_REQUESTED,
     });
@@ -27,7 +27,7 @@ export const incrementAsync = () => {
 };
 
 export const decrement = () => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: ACTIONS.COUNTER.DECREMENT_REQUESTED,
     });
@@ -39,7 +39,7 @@ export const decrement = () => {
 };
 
 export const decrementAsync = () => {
-  return dispatch => {
+  return (dispatch) => {
     dispatch({
       type: ACTIONS.COUNTER.DECREMENT_REQUESTED,
     });
