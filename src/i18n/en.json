@@ -1,0 +1,75 @@
+{
+    "appName": "Test App",
+    "availableLocale": ["en-us", "es-cr"],
+    "localeLabels": ["EN", "ES"],
+    "errorMessage": "Invalid Locale - Page not found",
+    "menu": ["Home", "Register"],
+    "viewDetails": "View Details",
+    "clinicPageLabels": {
+        "city": "City:",
+        "country": "Country:",
+        "postalCode": "Postal Code:",
+        "phoneNumber": "Phone Number:",
+        "clinicWebsite": "Website:"
+    },
+    "clinics": [
+        {
+            "clinicName": "CLINICA FELIZ",
+            "address": {
+                "city": "San Jose",
+                "country": {
+                    "id": "CR",
+                    "name": "Costa Rica"
+                },
+                "postalCode": "40320"
+            },
+            "phone": "8888-8888",
+            "clinicWebsite": "www.clinicafeliz.com"
+        },
+        {
+        "clinicName": "FRIENDS HOSPITAL",
+            "address": {
+                "city": "New York",
+                "country": {
+                    "id": "US",
+                    "name": "United State"
+                },
+                "postalCode": "40890"
+            },
+            "phone": "8888-8888",
+            "clinicWebsite": "www.friendshospital.com"
+        },
+        {
+            "clinicName": "HAPPY CLINIC",
+            "address": {
+                "city": "London",
+                "country": {
+                    "id": "UK",
+                    "name": "United Kingdom"
+                },
+                "postalCode": "38029"
+            },
+            "phone": "4444-4444",
+            "clinicWebsite": "www.happyclinic.com"
+        }
+    ],
+    "disclaimer": "By registering this clinic I will be assigned as a clinic administrator. I understand that this information will be used to generate personalised recommendations, in accordance to the ${termsOfUse} and ${privacyPolicy}. You will receive email notifications when new members request access to this clinic.",
+    "termsOfUse": {
+        "cta": "Legal and Privacy Policy",
+        "href": "http://www.example.com/legal-statement-and-privacy-policy"
+    },
+    "privacyPolicy": {
+        "cta": "Terms and Conditions",
+        "href": "https://www.hillspet.com/terms-and-conditions"
+    },
+    "registerForm":{
+        "clinicName": "Clinic Name",
+        "phoneNumber": "Phone Number",
+        "address": "Address",
+        "city": "City",
+        "clinicWebsite": "Website",
+        "clinicLogo": "Clinic Logo",
+        "chooseFileLabel": "Choose File",
+        "submit": "Register"
+    }
+}
