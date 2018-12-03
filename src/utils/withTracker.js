@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import GoogleAnalytics from 'react-ga';
 
-const {REACT_APP_GOOGLE_ANALYTICS_ID} = process.env;
+const { REACT_APP_GOOGLE_ANALYTICS_ID } = process.env;
 
 GoogleAnalytics.initialize(REACT_APP_GOOGLE_ANALYTICS_ID);
 

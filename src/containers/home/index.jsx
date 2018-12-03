@@ -1,8 +1,8 @@
 import React from 'react';
-import {push} from 'react-router-redux';
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
-import {Button} from 'semantic-ui-react';
+import { push } from 'react-router-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { Button } from 'semantic-ui-react';
 import {
   increment,
   incrementAsync,
