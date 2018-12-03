@@ -53,7 +53,7 @@
             "clinicWebsite": "www.happyclinic.com"
         }
     ],
-    "disclaimer": "By registering this clinic I will be assigned as a clinic administrator. I understand that this information will be used to generate personalised recommendations, in accordance to the ${termsOfUse} and ${privacyPolicy}. You will receive email notifications when new members request access to this clinic.",
+    "disclaimer": "By registering this clinic I will be assigned as a clinic administrator. I understand that this information will be used to generate personalised recommendations, in accordance to the %{termsOfUse} and %{privacyPolicy}. You will receive email notifications when new members request access to this clinic.",
     "termsOfUse": {
         "cta": "Legal and Privacy Policy",
         "href": "http://www.example.com/legal-statement-and-privacy-policy"

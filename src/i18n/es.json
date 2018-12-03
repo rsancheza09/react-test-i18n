@@ -53,7 +53,7 @@
             "clinicWebsite": "www.happyclinic.com"
         }
     ],
-    "disclaimer": "Al registrarme en esta clínica, seré asignado como administrador de la clínica. Entiendo que esta información se utilizará para generar recomendaciones personalizadas, de acuerdo con ${termsOfUse} y ${privacyPolicy}. Recibirá notificaciones por correo electrónico cuando nuevos miembros soliciten acceso a esta clínica.",
+    "disclaimer": "Al registrarme en esta clínica, seré asignado como administrador de la clínica. Entiendo que esta información se utilizará para generar recomendaciones personalizadas, de acuerdo con %{termsOfUse} y %{privacyPolicy}. Recibirá notificaciones por correo electrónico cuando nuevos miembros soliciten acceso a esta clínica.",
     "termsOfUse": {
         "cta": "Política legal y privacidad",
         "href": "http://www.example.com/legal-statement-and-privacy-policy"

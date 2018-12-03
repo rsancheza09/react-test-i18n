@@ -12,7 +12,7 @@ import createRootReducer from './reducers';
 import en from './i18n/en.json';
 import es from './i18n/es.json';
 
-const translationsObject = { en, es };
+const translationsObject = { 'en-us': en, 'es-cr': es };
 
 export const history = createBrowserHistory();
 
@@ -45,6 +45,6 @@ const store = createStore(
 
 syncTranslationWithStore(store);
 store.dispatch(loadTranslations(translationsObject));
-store.dispatch(setLocale('en'));
+store.dispatch(setLocale('en-us'));
 
 export default store;
