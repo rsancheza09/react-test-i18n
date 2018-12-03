@@ -22,7 +22,8 @@
   },
   "plugins": [
     "babel",
-    "react"
+    "react",
+    "emotion"
   ],
   "rules": {
     "indent": [
@@ -50,7 +51,10 @@
     ],
     "max-len": [
       "error",
-      150
+      150,
+      {
+        "ignoreStrings": true
+      }
     ],
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": 1,

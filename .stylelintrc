@@ -1,5 +1,16 @@
 {
-    plugins: [
-        "stylelint-scss"
-    ]
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "extends",
+        "ignores",
+        "mixin"
+      ]
+    }],
+    "indentation": "tab",
+    "number-leading-zero": null,
+    "unit-whitelist": ["em", "rem", "s", "%", "px", "deg", "vh", "vw"],
+    "font-family-no-missing-generic-family-keyword" : null
+  }
 }
