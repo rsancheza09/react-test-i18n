@@ -29,7 +29,8 @@ class App extends Component {
           menuItems,
           termsOfUse,
           privacyPolicy,
-        } }>
+        } }
+        >
           <Suspense fallback={ <Loading /> }>
             <Router>
               <Switch>

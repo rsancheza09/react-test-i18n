@@ -1,11 +1,12 @@
 nav.navbar {
-  background-color: brown;
+	background-color: brown;
 
-  .nav-item {
-    text-transform: uppercase;
-    > a { color: white; }
-    &.selected {
-      background-color: coral;
-    }
-  }
+	.nav-item {
+		text-transform: uppercase;
+		> a { color: white; }
+
+		&.selected {
+			background-color: coral;
+		}
+	}
 }
