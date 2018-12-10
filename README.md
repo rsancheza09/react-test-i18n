@@ -42,3 +42,5 @@ Base project for React Based Projects.
 >3. Visual Studio Code: [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 > ***Keep in mind that some fixes could edit your code, please make double check to your code and test it before a commit.*
+
+> React Base for Projects by [@rsancheza09](https://github.com/rsancheza09/create-react-app-redux-scss)

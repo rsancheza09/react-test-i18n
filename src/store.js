@@ -1,9 +1,18 @@
 import { createBrowserHistory } from 'history';
 import { createStore, applyMiddleware, compose } from 'redux';
-import { routerMiddleware } from 'connected-react-router'; // redux-promise
+import { routerMiddleware } from 'connected-react-router';
+import {
+  loadTranslations,
+  setLocale,
+  syncTranslationWithStore,
+} from 'react-redux-i18n';
 import thunk from 'redux-thunk';
-
 import createRootReducer from './reducers';
+
+import en from './i18n/en.json';
+import es from './i18n/es.json';
+
+const translationsObject = { 'en-us': en, 'es-cr': es };
 
 export const history = createBrowserHistory();
 
@@ -33,5 +42,9 @@ const store = createStore(
   initialState,
   composedEnhancers
 );
+
+syncTranslationWithStore(store);
+store.dispatch(loadTranslations(translationsObject));
+store.dispatch(setLocale('en-us'));
 
 export default store;
