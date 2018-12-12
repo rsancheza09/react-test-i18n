@@ -9,6 +9,7 @@ Base project for React Based Projects.
 3. HTML5
 4. SCSS
 5. [Create React App](https://github.com/facebook/create-react-app) as project builder.
+6. Testing End to End [Cypress](https://www.cypress.io/)
 
 ## Setting up develop environment ##
 
@@ -25,6 +26,11 @@ Base project for React Based Projects.
 4. Run build `$ yarn build`
 
 >*Production files will be under the folder **build***
+
+## End to End Testing
+
+1. All tests are located in `test` folder
+2. Run `yarn test:dev`
 
 ## Lint your code ##
 
